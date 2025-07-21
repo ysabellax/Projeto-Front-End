@@ -10,11 +10,13 @@
 }
 
 :root {
-    --purple-200: #9a7bd1;
-    --purple-500: #6b36c8;
-    --purple-800: #441f88;
+    --purple-100: #F2D5E0;
+    --purple-200: #F2A0B6;
+    --purple-500: #A66A7A;
+    --purple-800: #593640;
 
-    --black-800: #171717;
+    --black-800: #2e0219;
+    --black-900: #1d000a;
 
     --gray-200: #cccccc;
     --gray-400: #505861;
@@ -28,30 +30,30 @@ html {
 }
 
 body {
-    background: var(--gray-200);
-    color: var(--black-800);
+    background: var(--black-900);
+    color: var(--white);
 }
 
 h1{
-    color: var(--white);
+    color: var(--purple-100);
     font-size: 2rem;
     font-weight: 700;
 }
 
 h2{
     padding: 1rem;
-    color: var(--black-800);
+    color: var(--purple-200);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: left;
+
 }
 
 h3{
     padding: 1rem;
-    color: var(--white);
+    color: var(--purple-100);
     font-size: 1.25rem;
     font-weight: 700;
-    text-align: center;
 }
 
 p{
@@ -59,6 +61,8 @@ p{
     line-height: 1.5rem;
     text-align: justify;
     padding: 0.5rem 0;
+    margin-right: 20%;
+    margin-left: 5%;
 }
 
 /* Definindo as configurações do Flexbox */
@@ -92,7 +96,7 @@ p{
 
 #menu li a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--purple-100);
     font-size: 20px;
     text-decoration: none;
 }
@@ -101,6 +105,10 @@ p{
     color: var(--purple-200);
     text-decoration: underline;
     text-decoration: none;
+}
+
+#menu li a:active {
+    color: #1d000a;
 }
 
 #about {
@@ -117,6 +125,8 @@ p{
 .img_profile {
     width: 200px;
     border-radius: 50%;
+    padding: 5px 5px;
+    background-color:#F2A0B6
 }
 
 #video {
@@ -158,12 +168,12 @@ footer {
 .social_icon:hover {
     filter: brightness(0)
             saturate(100%)
-            invert(65%)
-            sepia(59%)
-            saturate(2437%)
-            hue-rotate(213deg)
-            brightness(86%)
-            contrast(88%);
+            invert(95%)
+            sepia(7%)
+            saturate(5314%)
+            hue-rotate(288deg)
+            brightness(98%)
+            contrast(93%);
 }
 
 #contact {
@@ -212,7 +222,7 @@ form button {
     text-align: center;
     padding: 0.75rem 2rem;
     background: var(--purple-800);
-    border: 1px solid var(--purple-500);
+    border: 1px solid var(--purple-800);
     color: var(--white);
     border-radius: 0.75rem;
     font-weight: 700;
@@ -243,3 +253,4 @@ form button:hover {
     display: flex;
     flex-direction: column;
 }
+
