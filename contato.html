@@ -6,13 +6,14 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-        <link rel="icon" type="image/svg" href="./assets/img/bella.ico" />
+		<link rel="icon" type="image/svg" href="./assets/img/bella.ico" />
+		<link rel="stylesheet" href="./assets/css/style.css">
 		<title>Meu Perfil</title>
 	</head>
-	<body>>
+	<body>
 		<header>
 
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<div id="titulo">
 					<h1>Ysabella Santos</h1>
 				</div>
@@ -37,7 +38,7 @@
 
 		<main>
 
-            <section id="contact">
+            <div id="contact" class="flex">
 
                 <form action="#" method="submit" id="formulario">
                     <label for="nome">Nome: </label>
@@ -82,7 +83,7 @@
 					<button type="submit">Enviar</button>
                 </form>
 
-                <article id="mapa">
+                <section id="mapa" class="flex_start">
                     <div id="endereco">
 						<p>Av. Paulista, 100</p>
 						<p>São Paulo - SP</p>
@@ -98,26 +99,28 @@
 						aria-hidden="false"
 						tabindex="0"
 						id="mapa"
+						onmousemove="mapaZoom()"
+						onmouseout="mapaNormal()"
 					>
                     </iframe>
-                </article>
+                </section>
                 
-            </section>
+            </div>
 
 		</main>
 
-		<footer>
+		<footer class="flex">
 
             <section id="redes_sociais">
 
                     <a href="https://www.linkedin.com/in/ysa-santos/">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
                     </a>
                     <a href="https://github.com/ysabellax">
-                        <img src="assets/img/github.svg" alt="Github" />
+                        <img src="assets/img/github.svg" alt="Github" class="social_icon"/>
                     </a>
                     <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
+                        <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
                     </a>
 
             </section>

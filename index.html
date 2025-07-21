@@ -7,12 +7,13 @@
         <meta name="author" content="Generation Brasil">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="icon" type="image/svg" href="./assets/img/bella.ico" />
+        <link rel="stylesheet" href="./assets/css/style.css">
         <title>Meu Perfil</title>
     </head>
     <body>
         <header>
 
-            <div id="header_content">
+            <div id="header_content" class="flex">
 
                 <div id="titulo">
                     <h1>Ysabella Santos</h1>
@@ -20,7 +21,7 @@
 
                 <div id="menu">
                     <nav>
-                        <ul>
+                        <ul id="menu">
                             <li>
                                 <a href="index.html"> Home </a>
                             </li>
@@ -38,11 +39,13 @@
         </header>
 
         <main>
-            <section id="about">
+            <section id="about" class="flex_start">
                 <h2>Um pouco sobre mim</h2>
 
-                <div id="conteúdo">
-                    <img src="./assets/img/bellaskingit.png" alt="Foto do Criador desse Conteúdo">
+                <div id="conteúdo" class="flex">
+                    <img src="./assets/img/bellaskingit.png" alt="Foto do Criador desse Conteúdo"
+                    class="img_profile"
+                    >
 
                     <article id="sobre_texto">
                         <p>
@@ -52,10 +55,10 @@
                 </div>
             </section>
 
-            <section id="video">
+            <section id="video" class="flex_start">
                 <h2>Meu vídeo Favorito:</h2>
 
-                <div id="youtube">
+                <div id="youtube" class="flex">
                     <iframe 
                     width="560"
                     height="315"
@@ -68,17 +71,18 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="flex">
             <section id="redes_sociais">
 
                 <a href="https://www.linkedin.com/in/ysa-santos/">
-                    <img src="assets/img/linkedin.svg" alt="LinkedIn">
+                    <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon">
                 </a>
                 <a href="https://github.com/ysabellax">
-                    <img src="assets/img/github.svg" alt="GitHub">
+                    <img src="assets/img/github.svg" alt="GitHub" class="social_icon">
                 </a>
                 <a href="">
-                    <img src="assets/img/instagram.svg" alt="Instagram">
+                    <img src="assets/img/instagram.svg" alt="Instagram"
+                    class="social_icon">
                 </a>
             </section>
             <h3>
