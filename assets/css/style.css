@@ -45,7 +45,7 @@ h2{
     color: var(--purple-200);
     font-size: 1.5rem;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -105,6 +105,8 @@ p{
     color: var(--purple-200);
     text-decoration: underline;
     text-decoration: none;
+    background-color: #b48491ad;
+    padding: 10px 10px;
 }
 
 #menu li a:active {
@@ -120,6 +122,7 @@ p{
 #conteudo {
     flex-direction: row;
     gap: 2rem;
+    display: flex;
 }
 
 .img_profile {
@@ -168,12 +171,12 @@ footer {
 .social_icon:hover {
     filter: brightness(0)
             saturate(100%)
-            invert(95%)
-            sepia(7%)
-            saturate(5314%)
-            hue-rotate(288deg)
-            brightness(98%)
-            contrast(93%);
+            invert(10%)
+            sepia(10%)
+            saturate(4355%)
+            hue-rotate(281deg)
+            brightness(95%)
+            contrast(112%);
 }
 
 #contact {
@@ -254,3 +257,14 @@ form button:hover {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1000px) {
+    #conteudo {
+        flex-direction: column;
+    }
+
+    #conteudo img {
+        border-radius: 32px;
+        border: 2px solid #F2A0B6;
+        width: 75vw;
+    }   
+}
