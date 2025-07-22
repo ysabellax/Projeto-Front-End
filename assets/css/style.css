@@ -62,7 +62,6 @@ p{
     text-align: justify;
     padding: 0.5rem 0;
     margin-right: 20%;
-    margin-left: 5%;
 }
 
 /* Definindo as configurações do Flexbox */
@@ -99,6 +98,7 @@ p{
     color: var(--purple-100);
     font-size: 20px;
     text-decoration: none;
+    padding: 10px 10px;
 }
 
 #menu li a:hover {
@@ -106,7 +106,6 @@ p{
     text-decoration: underline;
     text-decoration: none;
     background-color: #b48491ad;
-    padding: 10px 10px;
 }
 
 #menu li a:active {
@@ -135,7 +134,12 @@ p{
 #video {
     flex-direction: column;
     margin: 2rem auto;
-    width: 90%;
+    width: 50%;
+}
+
+#youtube {
+    
+    
 }
 
 footer {
@@ -257,13 +261,22 @@ form button:hover {
     flex-direction: column;
 }
 
+article > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+    margin-right: 20%;
+    margin-left: 5%;
+}
+
 @media screen and (max-width: 1000px) {
     #conteudo {
         flex-direction: column;
     }
 
     #conteudo img {
-        border-radius: 32px;
+        border-radius: 50%;
         border: 2px solid #F2A0B6;
         width: 75vw;
     }   
